@@ -3,9 +3,7 @@ const Sequelize = require('sequelize');
 
 const sequelizeConnection = new Sequelize('yourDBName','YourUserName','YourPassword',{
     host: 'yourServerName',
-    dialect:'mssql',
-    rowCollectionOnRequestCompletion: true,
-    rowCollectionOnDone : true
+    dialect:'mssql'
 });
 
 function callSpSequelize(callback,responseCallback,...params){
